@@ -1,22 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet">
-    <link href ="css/style.css" rel="stylesheet" type="text/css">
-	<script type ="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
-	<title>Document</title>
+    <title>AJAX Test</title>
+    <script type ="text/javascript" src="main.js"></script>
 </head>
+
 <body>
-	<div id="container">
-        <div class="card">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum perspiciatis ratione dolorem, suscipit facere aliquam alias neque beatae adipisci, atque obcaecati numquam eveniet autem tenetur quis veniam cumque velit non?</p>
-        </div>
-        <div class="card">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum perspiciatis ratione dolorem, suscipit facere aliquam alias neque beatae adipisci, atque obcaecati numquam eveniet autem tenetur quis veniam cumque velit non?</p>
-        </div>
-    </div>  
-	<script src="script.js"></script> <!-- Scripts located at the bottom of the body to insure page is fully loaded before execution -->	
+    <button onclick="writeToDocument('https://ci-swapi.herokuapp.com/api/people')">People</button>
+    <button onclick="writeToDocument('https://ci-swapi.herokuapp.com/api/planets')">Planets</button>
+    <button onclick="writeToDocument('https://ci-swapi.herokuapp.com/api/species')">Species</button>
+    <button onclick="writeToDocument('https://ci-swapi.herokuapp.com/api/starships')">Starship</button>
+    <button onclick="writeToDocument('https://ci-swapi.herokuapp.com/api/vehicles')">Vehicles</button>
+    <button onclick="writeToDocument('https://ci-swapi.herokuapp.com/api/films')">Films</button>
+
+    <div id="data"></div>
 </body>
+
 </html>

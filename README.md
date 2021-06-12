@@ -57,3 +57,11 @@ We continually tweak and adjust this template to help give you the best experien
 ---
 
 Happy coding!
+
+
+    <button onclick="writeToDocument('people')">People</button>
+    <button onclick="writeToDocument('planets')">Planets</button>
+    <button onclick="writeToDocument('species')">Species</button>
+    <button onclick="writeToDocument('starships')">Starship</button>
+    <button onclick="writeToDocument('vehicles')">Vehicles</button>
+    <button onclick="writeToDocument('films')">Films</button>
